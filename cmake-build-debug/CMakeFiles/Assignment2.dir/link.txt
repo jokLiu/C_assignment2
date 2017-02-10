@@ -1,0 +1,1 @@
+/usr/bin/cc  -g   CMakeFiles/Assignment2.dir/evalexpmain.c.o  -o Assignment2 

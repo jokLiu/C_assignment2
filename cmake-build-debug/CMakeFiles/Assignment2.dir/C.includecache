@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jokl/CLionProjects/Assignment2/evalexp.h
+
+/home/jokl/CLionProjects/Assignment2/evalexpmain.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+evalexp.h
+/home/jokl/CLionProjects/Assignment2/evalexp.h
+
