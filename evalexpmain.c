@@ -99,20 +99,74 @@ int main(int argc, const char *argv[])
 //
 //    printf("%d\n", evalexp(e1)); // should print  2000
 
-    struct exp *e1 ,*e2, *e3;
-    struct explist *l;
+//    struct exp *e1 ,*e2, *e3;
+//    struct explist *l;
+//
+//    l = NULL;
+//    l = cons(mkvar("y"), l);
+//    e2 = mklet("x",mkconstant(10) , mkvar("x"));
+//    l = cons(e2, l);
+//    l = cons(mkvar("y"), l);
+//    e3 = mkopapp(isplus, l);
+//    e1 = mklet("y",mkconstant(2) , e3);
+//
+//    printf("%d\n", evalexp(e1)); // should print  14
 
-    l = NULL;
-    l = cons(mkvar("y"), l);
-    e2 = mklet("x",mkconstant(10) , mkvar("x"));
-    l = cons(e2, l);
-    l = cons(mkvar("y"), l);
-    e3 = mkopapp(isplus, l);
-    e1 = mklet("y",mkconstant(2) , e3);
+//    struct exp *e1 ,*e2;
+//    struct explist *l, *l2;
+//
+//    l = NULL;
+//    l = cons(mkconstant(4), l);
+//    l = cons(mkconstant(2), l);
+//    l = cons(mkconstant(1), l);
+//    e1 = mkopapp(ismult, l);
+//
+//    l = NULL;
+//    l = cons(mkconstant(3), l);
+//    l = cons(mkconstant(3), l);
+//
+//    l2 = NULL;
+//    l2 = cons(mkconstant(2), l2);
+//    l2 = cons(mkconstant(1), l2);
+//    l2 = cons(mkconstant(3), l2);
+//    e2 = mkopapp(ismult, l2);
+//
+//    l = cons(e2, l);
+//    l = cons(mkconstant(1), l);
+//    e2 = mkopapp(isplus, l);
+//
+//    l2 = NULL;
+//    l2 = cons(e1, l2);
+//    l2 = cons(e2, l2);
+//    l2 = cons(mkconstant(2), l2);
+//    l2 = cons(mkconstant(2), l2);
+//    l2 = cons(mkconstant(5), l2);
+//    e2 = mkopapp(isplus, l2);
+//
+//    printf("%d\n", evalexp(e2)); //should print 30
 
-    printf("%d\n", evalexp(e1)); // should print  14
+//
+//    struct exp *e1, *e2,*e3;
+//    struct explist *l;
+//
+//    l = NULL;
+//    l = cons(mkvar("x"), l);
+//    l = cons(mkvar("y"), l);
+//    e3 = mkopapp(isplus, l);
+//
+//    e1 = mklet("x", mkconstant(2), mkvar("x"));
+//    e2 = mklet("y", mkvar("x"),e3);
+//    e3 = mklet("x",e1,e2);
+//
+//    printf("%d\n", evalexp(e3)); // should print  4
 
-  return 0;
+    int n = 10;
+    int *p1 = &n;
+    int *p2 = p1;
+    *p2 = *p1 + 1;
+    printf("%d\n", n);
+
+    return 0;
 }
 
 
